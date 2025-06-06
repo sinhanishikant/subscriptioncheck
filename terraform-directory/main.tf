@@ -29,7 +29,7 @@ variable "billing_account_id" {
   description = "The resource ID of your billing account (e.g. /providers/Microsoft.Billing/billingAccounts/...)"
   default = "/providers/Microsoft.Billing/billingAccounts/Nishikant Sinha"
 }
-resource "azapi_update_resource_action" "new_subscription" {
+resource "azapi_resource_action" "new_subscription" {
   type        = "Microsoft.Billing/billingAccounts/subscriptions@2020-05-01"
   resource_id = var.billing_account_id
   action      = "createSubscription"
