@@ -32,6 +32,7 @@ variable "billing_account_id" {
 
 resource "azapi_resource" "new_subscription" {
   type      = "Microsoft.Billing/billingAccounts/billingSubscriptions@2020-05-01"
+  name      = "${var.prefix}-subscription"
   parent_id = var.billing_account_id
 
   body = jsonencode({
