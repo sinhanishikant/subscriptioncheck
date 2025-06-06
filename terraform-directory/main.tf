@@ -27,7 +27,7 @@ variable "subscription_display_name" {
 variable "billing_account_id" {
   type    = string
   description = "The resource ID of your billing account (e.g. /providers/Microsoft.Billing/billingAccounts/...)"
-  default = "/providers/Microsoft.Billing/billingAccounts/Nishikant Sinha"
+  default = "/providers/Microsoft.Billing/billingAccounts/55167655-ab0a-550f-83e2-5acff7ccb429:400fc766-8785-4934-b6c4-b6199ee8845a_2019-05-31"
 }
 resource "azapi_resource_action" "new_subscription" {
   type        = "Microsoft.Billing/billingAccounts@2020-05-01"
